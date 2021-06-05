@@ -18,3 +18,6 @@ def index():
     
 
     return "Flag is %s " % flag
+
+@app.route("/app-running")
+    return "App is runnning"
