@@ -18,7 +18,7 @@ scheduler = APScheduler()
 # scheduler.init_app(app)
 
 # cron examples
-@scheduler.task('cron', id='ping', minute='*/25')
+@scheduler.task('cron', id='ping', minute='*/20')
 def job2():
     response = requests.get("http://punlaonline.herokuapp.com")
     print(response.status_code)
